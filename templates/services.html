@@ -1,0 +1,230 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<head>
+	<!-- templatemo 419 black white -->
+	<!-- 
+    Black White
+    http://www.templatemo.com/preview/templatemo_419_black_white
+    -->
+	<title>Services - Black White HTML5 Template</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/templatemo_style.css' %}" rel="stylesheet" type="text/css">
+	<style>
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+			color: white;
+			font-size: 12px;
+			background: rgb(0, 0, 0);
+		}
+
+		form {
+			margin-top: 200px;
+			margin-left: 170px;
+			margin-bottom: 150px;
+			background: rgba(21, 52, 94, 0.1);
+			width: 450px;
+			border-radius: 0.4em;
+			border: 1px solid #191919;
+			overflow: hidden;
+			position: relative;
+			box-shadow: 0 5px 10px 5px rgba(0, 0, 0);
+		}
+
+		form:after {
+			content: "";
+			display: block;
+			position: absolute;
+			height: 1px;
+			width: 450px;
+			left: 20%;
+			background: linear-gradient(left, #111, #444, #b6b6b8, #444, #111);
+			top: 0;
+		}
+
+		form:before {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 8px;
+			height: 5px;
+			border-radius: 50%;
+			left: 34%;
+			top: -7px;
+			box-shadow: 0 0 6px 4px #fff;
+		}
+
+		.inset {
+			padding: 20px;
+			border-top: 1px solid #19191a;
+		}
+
+		form h1 {
+			font-size: 18px;
+			text-shadow: 0 1px 0 black;
+			text-align: center;
+			padding: 15px 0;
+			border-bottom: 1px solid rgba(0, 0, 0, 1);
+			position: relative;
+		}
+
+		form h1:after {
+			content: "";
+			display: block;
+			width: 250px;
+			height: 100px;
+			position: absolute;
+			top: 0;
+			left: 50px;
+			pointer-events: none;
+			transform: rotate(70deg);
+			background: linear-gradient(50deg, rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0));
+
+		}
+
+		label {
+			color: #666;
+			display: block;
+			padding-bottom: 9px;
+		}
+
+		input[type=text],
+		input[type=password] {
+			width: 100%;
+			padding: 5px 2px;
+			background: linear-gradient(#1f2124, #27292c);
+			border: 1px solid #222;
+			box-shadow:
+				0 1px 0 rgba(255, 255, 255, 0.1);
+			border-radius: 0.3em;
+			margin-bottom: 1px;
+		}
+
+		label[for=remember] {
+			color: white;
+			display: inline-block;
+			padding-bottom: 0;
+			padding-top: 5px;
+		}
+
+		.p-container {
+			padding: 0 20px 20px 20px;
+		}
+
+		.p-container:after {
+			clear: both;
+			display: table;
+			content: "";
+		}
+
+		.p-container span {
+			display: block;
+			float: left;
+			color: #0d93ff;
+			padding-top: 8px;
+		}
+
+		input[type=submit] {
+			padding: 5px 10px;
+			border: 1px solid rgba(0, 0, 0, 0.4);
+			text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+			box-shadow:
+				inset 0 1px 0 rgba(255, 255, 255, 0.3),
+				inset 0 10px 10px rgba(255, 255, 255, 0.1);
+			border-radius: 0.3em;
+			background: #0184ff;
+			color: white;
+			float: right;
+			font-weight: bold;
+			cursor: pointer;
+			font-size: 13px;
+		}
+
+		input[type=submit]:hover {
+			box-shadow:
+				inset 0 1px 0 rgba(255, 255, 255, 0.3),
+				inset 0 -10px 10px rgba(255, 255, 255, 0.1);
+		}
+
+		input[type=text]:hover,
+		input[type=password]:hover,
+		label:hover~input[type=text],
+		label:hover~input[type=password] {
+			background: #27292c;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="templatemo-logo visible-xs-block">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 black-bg logo-left-container">
+			<h1 class="logo-left">Black</h1>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 white-bg logo-right-container">
+			<h1 class="logo-right">White</h1>
+		</div>
+	</div>
+	<div class="templatemo-container">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 black-bg left-container">
+			<h1 class="logo-left hidden-xs margin-bottom-60"><b>Deel..</b></h1>
+			<div class="tm-left-inner-container">
+				<ul class="nav nav-stacked templatemo-nav">
+					<li><a href="/"><i class="fa fa-home fa-medium"></i>Homepage</a></li>
+				  <li><a href="/services/" class="active"><i class="fa fa-send-o fa-medium"></i>Add Resource</a></li>
+				  <li><a href="/display/"><i class="fa fa-shopping-cart fa-medium"></i>All Resources</a></li>
+				  <li><a href="testimonials.html"><i class="fa fa-comments-o fa-medium"></i>Testimonials</a></li>
+				  <li><a href="about.html"><i class="fa fa-gears fa-medium"></i>Your Account</a></li>
+				  <li><a href="contact.html"><i class="fa fa-envelope-o fa-medium"></i>Sign Out</a></li>
+				</ul>
+			</div>
+		</div> <!-- left section -->
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 white-bg right-container">
+			<h1 class="logo-right hidden-xs margin-bottom-60" style="color: #111;"><b>Deel..</b></h1>
+			<div class="tm-right-inner-container">
+				<form action="{% url 'services' %}" method="post" enctype="multipart/form-data"> 
+					{% csrf_token %}
+					<!-- <h1>User Registration</h1> -->
+					<div class="inset">
+						<p>
+							<label for="Description">Add Ur Description</label>
+							<input type="text" name="Description" id="Description">
+						</p>
+						<label for="myfile">Select files:</label>
+						{{ form.file }}
+						<!-- <input type="file" id="myfile" name="myfile" multiple><br> -->
+					</div>
+					<p class="p-container">
+						<input type="submit" name="go" id="go">
+					</p>
+				</form>
+				<footer>
+					<p class="col-lg-6 col-md-6 col-sm-12 col-xs-12 templatemo-copyright">Copyright &copy; 2084 Your
+						Company
+						Name <!-- Credit: www.templatemo.com --></p>
+					<p class="col-lg-6 col-md-6 col-sm-12 col-xs-12 templatemo-social">
+						<a href="#"><i class="fa fa-facebook fa-medium"></i></a>
+						<a href="#"><i class="fa fa-twitter fa-medium"></i></a>
+						<a href="#"><i class="fa fa-google-plus fa-medium"></i></a>
+						<a href="#"><i class="fa fa-youtube fa-medium"></i></a>
+						<a href="#"><i class="fa fa-linkedin fa-medium"></i></a>
+					</p>
+				</footer>
+			</div>
+		</div>
+	</div> <!-- right section -->
+	</div>
+</body>
+
+</html>
