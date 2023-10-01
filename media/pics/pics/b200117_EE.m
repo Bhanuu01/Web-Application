@@ -1,0 +1,11 @@
+clc;
+clear all;
+x=[-1 -1 2 2;0 5 0 5];
+x2=[1 1 2 2;1 1 0 0];
+t=[-1 -1 1 1];
+net=feedforwardnet(10);
+nett=train(net,x,t);
+view=(net);
+y=sim(nett,x);
+y1=sim(nett,x2);
+e=t-y;

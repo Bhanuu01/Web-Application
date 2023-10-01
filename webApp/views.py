@@ -17,19 +17,6 @@ def signup(request):
     return render(request,"signup.html")
 
 def services(request):
-    # if request.method == 'POST':
-    #     print('hello')
-    #     reso = resource()
-    #     print(request.POST.get)
-    #     reso.desc = request.POST.get('Description')
-    #     print(reso.desc)
-    #     reso.img = request.POST.get('myfile')
-    #     print(reso.img)
-    #     reso.save()
-    #     print('data saved',reso)
-    #     return render(request,'services.html')
-    # else:
-    #     return render(request,'services.html')
     if request.method == 'POST':
         form = UploadFileForm(request.POST, request.FILES)
         print(request.FILES)
