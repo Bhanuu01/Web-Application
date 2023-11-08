@@ -4,11 +4,32 @@ from .functions import handle_uploaded_file
 from .forms import UploadFileForm
 from django.http import HttpResponse  
 from django.core.files.storage import FileSystemStorage
+import random
 
 # Create your views here.
 
 def home(request):
-    return render(request,'index.html')
+
+    reso = resource.objects.all()
+    k = 0
+    dic = []
+    for i in reso:
+        temp = dict()
+        temp['id'] = str(k)
+        temp['desc'] = i.desc
+        temp['file'] = str(i.img)
+        dic.append(temp)
+        # print(dic)
+        k += 1
+
+    # Shuffle the list of files
+    random.shuffle(dic)
+
+    # Get the first 6 files (or fewer if there are less than 6 files)
+    dic = dic[:6]
+
+    return render(request, 'index.html', {'dic' : dic})
+    # return render(request,'index.html')
 
 def login(request):
     return render(request,'login.html')

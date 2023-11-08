@@ -80,12 +80,13 @@
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 white-bg right-container">
             <h1 class="logo-right hidden-xs margin-bottom-60">White</h1>
             <div class="tm-right-inner-container">
-                <h1 class="templatemo-header"> <b>Resources</b> </h1>
+                <h1 class="templatemo-header"> <b>Collection of Resources</b> </h1>
                 <div class="file-container">
                     {% for i in dic %}
                     <div class="file-item">
                         <h6 class="file-description">{{ i.desc }}</h6>
                         <a class="file-link" href="/media/{{ i.file }}" download="{{ i.file }}">Download</a>
+                        <a class="file-link" href="/media/{{ i.file }}" target="_blank">View</a>
                     </div>
                     {% endfor %}
                 </div>
